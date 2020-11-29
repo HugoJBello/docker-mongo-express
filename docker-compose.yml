@@ -1,0 +1,11 @@
+
+mongo-express:
+  image: mongo-express
+  container_name: mongo-express
+  restart: always
+  network_mode: "host"
+  ports:
+    - 80:8081
+  #environment:
+    #ME_CONFIG_MONGODB_ADMINUSERNAME: root
+    #ME_CONFIG_MONGODB_ADMINPASSWORD: example
